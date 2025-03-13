@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11. évfolyam</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Kattintható dobozok stílusa */
+        .subject-box {
+            display: block;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            width: 150px; /* A doboz szélessége */
+            text-align: center;
+        }
+
+        .subject-box:hover {
+            background-color: #e6e6e6;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* A tantárgyak elrendezése */
+        .subject-list {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap; /* Ha nincs elég hely, akkor a következő sorra kerülnek */
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* Rendelkezésre álló hely felosztása */
+        @media (max-width: 768px) {
+            .subject-box {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfólió</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Főoldal</a></li>
+                    <li><a href="12evfolyam.html" class="nav-link">12. évfolyam</a></li>
+                    <li><a href="13evfolyam.html" class="nav-link">13. évfolyam</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="year-info">
+            <h2>11. évfolyam</h2>
+            <h3>1. félév</h3>
+            <div class="subject-list">
+                <a href="elektronika.html" class="subject-box">Elektronika</a>
+                <a href="mikrovez.html" class="subject-box">Mikrovezérlő programozás</a>
+            </div>
+
+            <h3>2. félév</h3>
+            <div class="subject-list">
+                <a href="digitalis.html" class="subject-box">Digitális áramkörök</a>
+                <a href="programozas.html" class="subject-box">Programozás alapjai</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Bánki Donát</p>
+    </footer>
+</body>
+</html>
+
+ 
+ 
+ 
+ 
