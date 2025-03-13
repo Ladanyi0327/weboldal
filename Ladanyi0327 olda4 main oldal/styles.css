@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+}
+ 
+header {
+    background-color: #000203;
+    color: white;
+    padding: 20px 0;
+}
+ 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+header h1 {
+    font-size: 2rem;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+}
+ 
+nav ul li {
+    margin-left: 20px;
+}
+ 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+ 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+ 
+main {
+    width: 80%;
+    margin: 40px auto;
+}
+ 
+.intro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+ 
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+ 
+.intro img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+ 
+.year-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.year-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+ 
+.year-info ul {
+    list-style: none;
+}
+ 
+.year-info ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+ 
+.subject-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+ 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+ 
+footer p {
+    font-size: 1rem;
+}
+
+.subject-info li  {
+    width: 70%;
+}
+
+.image-container img {
+    width: 100px;  /* Kép méretének beállítása */
+    height: 100px; /* Kép magasságának beállítása */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
