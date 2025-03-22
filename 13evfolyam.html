@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. évfolyam</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Kattintható dobozok stílusa */
+        .subject-box {
+            display: block;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            width: 150px; /* A doboz szélessége */
+            text-align: center;
+        }
+
+        .subject-box:hover {
+            background-color: #e6e6e6;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* A tantárgyak elrendezése */
+        .subject-list {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap; /* Ha nincs elég hely, akkor a következő sorra kerülnek */
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* Rendelkezésre álló hely felosztása */
+        @media (max-width: 768px) {
+            .subject-box {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfólió</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Főoldal</a></li>
+                    <li><a href="11evfolyam.html" class="nav-link">11. évfolyam</a></li>
+                    <li><a href="12evfolyam.html" class="nav-link">12. évfolyam</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <main>
+        <section class="year-info">
+            <h2>13. évfolyam</h2>
+            <h3>1. félév</h3>
+            <div class="subject-list">
+                <a href="iot.html" class="subject-box">IoT</a>
+                <a href="munkavallalo.html" class="subject-box">Munkavállalói idegen nyelv</a>
+            </div>
+
+            <h3>2. félév</h3>
+            <div class="subject-list">
+                <a href="robotika.html" class="subject-box">Robottechnika CAD/CAM</a>
+                <a href="programfejlesztes.html" class="subject-box">Programfejlesztés</a>
+            </div>
+        </section>
+    </main>
+ 
+    <footer>
+        <p>&copy; Bánki Donát</p>
+    </footer>
+</body>
+</html>
